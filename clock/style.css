@@ -1,0 +1,479 @@
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox
+{
+width: auto;
+height: 400px;
+}
+
+
+
+
+#clock1{
+    /* width: 50%; */
+    /* background-size: 100px 100px; */
+    
+    background-color:rgba(255, 255, 255, 0.178);
+    filter: alpha(opacity=60);
+  /* opacity: 0.0; */
+  width: auto;
+height: 400px;
+    /* padding: 30px 50px 200px 50px;  */
+     border-radius: 100%;
+    /* opacity: 100%; */
+    position: relative; 
+    top: 10px;  
+    left: 450px;
+    
+    }
+
+
+
+#clock{
+    /* width: 50%; */
+    /* background-size: 100px 100px; */
+    
+    background-color:rgba(255, 255, 255, 0);
+  /* opacity: 0.0; */
+  width: auto;
+height: 300px;
+     border-radius: 100%;
+
+    /* opacity: 100%; */
+    /* position: relative; 
+    top: 10px;  
+    left: 800px; */
+}
+    
+  #clock:hover
+    {
+    filter: drop-shadow( 5px 5px 4px  black);
+    transition: all 0.05s ease-out;
+
+}  
+    
+
+    #UTCanclock
+    {
+        background-color:rgba(255, 255, 255, 0);
+        border-radius: 100%;
+        width: auto;
+        height:100%;
+        position: absolute; 
+        top:0%;
+    left:5%;
+    /* -webkit-filter: drop-shadow( 4px 4px 5px  black); */
+        filter: drop-shadow( 5px 5px 4px  black);
+    }
+
+  
+
+.navbar-brand{
+    color: white;
+    position: relative; 
+
+    top: 4px;  
+        left: 8px;
+}
+
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke:black;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+    
+}
+
+.mid-circle {
+    fill: rgb(0, 0, 0);
+}
+.hour-marks {
+    fill: none;
+    stroke:rgb(0, 0, 0);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+#hour1,
+#minute1,
+#second1 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+#hour2,
+#minute2,
+#second2 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+#hour3,
+#minute3,
+#second3 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+#hour4,
+#minute4,
+#second4 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour5,
+#minute5,
+#second5 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour6,
+#minute6,
+#second6 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour7,
+#minute7,
+#second7 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour8,
+#minute8,
+#second8 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour9,
+#minute9,
+#second9 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour10,
+#minute10,
+#second10 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour11,
+#minute11,
+#second11 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour12,
+#minute12,
+#second12 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour13,
+#minute13,
+#second13 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour14,
+#minute14,
+#second14 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+#hour15,
+#minute15,
+#second15 {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+#hours,
+#minutes,
+#seconds {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+.nav-container {
+    width:100%;
+ background-color:black;   
+    
+}
+
+.navbar-logo{
+color: white;
+margin-left: 10%;
+
+}
+
+
+.navbar{
+    display:grid;
+    grid-template-columns: 0.2fr auto 1fr;
+}
+
+.navbar-nav{
+display:grid;
+grid-template-columns: repeat(15,auto);
+text-align: start;
+width: 70%;
+justify-self: start;
+}
+
+
+
+.digital{
+    background-color:black;
+    position:absolute; 
+    top: 500px;  
+    left: 575px;
+    font-size:larger;
+    padding: 10px 10px 10px 5px;
+    border-radius: 10%;
+
+}
+
+
+
+.nav-container {
+    width:100%;
+ background-color:black;   
+    
+}
+
+.navbar-logo{
+color: white;
+margin-left: 10%;
+
+}
+
+
+.navbar{
+    display:grid;
+    grid-template-columns: 0.2fr auto 1fr;
+}
+
+
+
+.navbar-nav{
+display:grid;
+grid-template-columns: repeat(15,auto);
+width: 70%;
+
+/* grid-template-columns: repeat(15,auto); */
+/* text-align: start; */
+/* justify-self: start; */
+}
+
+.find{
+
+    position: absolute; 
+    top: 17px;  
+    left: 980px;
+}
+
+.countries
+{
+    background-color: rgba(255, 0, 242, 0.301);
+    font-family: 'Times New Roman', Times, serif;
+    width:100%;
+    height: auto;
+    box-shadow:0px 0px 20px 0.5px black;
+
+}
+
+.tab-link
+{
+    color: white;
+    text-decoration: none;
+    padding: 5% 15% 5% 15%;
+    border-radius: 8%;
+}
+
+.tab-link:hover
+{
+    background-color: rgba(255, 38, 0, 0.719);
+    color:rgb(250, 250, 250);
+ transition: all 0.2s ease-out;
+   padding: 5% 15% 5% 15%;
+border-radius: 8%;
+}
+
+.container
+{
+    margin-top: 1%;
+    width:auto;
+    height: auto;
+    background-color:rgba(255, 208, 0, 0) ;
+}
+
+.fore
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.display
+{
+    position: relative; 
+    top: 10px;  
+    left: 5px;
+    padding-top: 10px;
+}
+
+.Ucont
+{
+    background-image: linear-gradient(to bottom right, rgba(0, 238, 255, 0.781), rgba(255, 255, 255, 0.822),rgba(0, 217, 255, 0.781));
+      width: 100%;
+  height: 60%;
+ margin-bottom:3% ;
+ box-shadow:0px 0px 20px 0.5px black;
+}
+
+.Antime
+{
+    background-image: linear-gradient(to bottom right, rgba(229, 255, 0, 0.596), rgba(255, 136, 0, 0.596));
+  width: 97%;
+  height: 370px;
+  margin-left:1.5% ;
+ margin-bottom:1% ;
+ box-shadow:0px 0px 10px 2px rgb(218, 218, 218);
+}
+
+
+
+.UTCclock
+{
+    position: relative;
+    top:0%;
+    left:32%;
+  height: 80%;
+  width: 28%;
+  margin: top 0% ;
+  margin: bottom 2%;
+  
+    /* float: right; */
+
+}
+
+
+
+ .clocks
+{
+    position: relative;
+    bottom: 3%;
+    margin-right: 5%;
+float: right;
+}
+
+
+.times
+{
+        position:relative; 
+        font-family: 'Times New Roman', Times, serif;
+    top: 60px;  
+    left: 15px;
+float: left;
+ } 
+
+ .Utime
+{
+        position:relative; 
+        font-family: 'Times New Roman', Times, serif;
+    top: 17%;  
+    left:2%;
+float: left;
+}
+
+   
+.UTCright
+{
+    position: absolute;
+    top: 27%;
+    left:65%;
+    font-family: 'Times New Roman', Times, serif;
+float:right;
+}
+
+.bodycont
+{
+background-color:rgba(255, 208, 0, 0.5) ;
+}
+
+.Countname
+{
+ position:relative;
+ top:2%;
+ 
+}
+
+
+
