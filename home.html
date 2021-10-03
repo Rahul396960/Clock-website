@@ -1,0 +1,134 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>  -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    
+    <title>CLOCK</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+    <script src="project.js" async></script>
+
+
+  <body class="bodycont">
+    <div class="nav-container">
+      <nav class="navbar" >
+        <div class="navleft"> 
+
+          <h1 class="navbar-logo" ><b>CLOCK</b></h1>
+          
+          <div class="menu-toggle" id="mobile-menu">
+            
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+             
+            </div>
+   
+            <div class="tabs">
+            <ul class="navbar-nav">
+                 <li style="background-color:rgba(255, 38, 0, 0.719)"  >
+                    <a class="tab-link "  href="home.html"  >Home</a>
+                </li>
+                <li >
+                  <a class="tab-link "  href="countries.html" >
+                    Countries
+                  </a>
+                </li>
+                <li >
+                  <a class="tab-link"  href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+              <!-- <div class="find">
+                <form>
+                  <input class="fore" type="search" placeholder="Search" >
+                  <button class="ser-btn" type="submit">Search</button>
+                </form>
+              </div>
+              </nav> -->
+        </div>
+          <!-- <pi id="demo"></p> -->
+    
+            <div class="container" >
+              <div class="Ucont">
+                  <div class="UTC">
+                      <h1 >Explanation oF Time</h1>  
+                  </div> 
+                  <div class="Uinfo">
+                  <div class="Utime">
+                      <p ><font size=5px; color="black">Time is familiar to everyone, yet it's hard to define and understand. Science, philosophy, religion, and the arts have different definitions of time, but the system of measuring it is relatively consistent. <b><span id="UTCtime" style= "  text-decoration: underline;"></span></b></font></p>
+                  </div>
+                  <div class="digital">
+                      <svg id="clock1" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                          <g id="face">
+                              <circle class="circle" cx="300" cy="300" r="253.9"/>
+                              <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                              <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                          </g>
+                          <g id="hour">
+                              <path class="hour-arm" d="M300.5 298V142"/>
+                              <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                          </g>
+                          <g id="minute">
+                              <path class="minute-arm" d="M300.5 298V67"/>
+                              <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                          </g>
+                          <g id="second">
+                              <path class="second-arm" d="M300.5 350V55"/>
+                              <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                          </g>
+                      </svg>
+
+                      <p><b>&ensp;<span id="time1"></span></b></p>
+            
+                  </div>
+
+                      <div class="UTCright">
+                        <p><font size=5px; color="black">Clocks are based on seconds, minutes, and hours. While the basis for these units has changed throughout history, they trace their roots back to ancient Sumeria. The modern international unit of time, the second, is defined by the electronic transition of the cesium atom.  
+                            </font>
+                        </p>
+                        </div>
+                  </div>
+            <div style="padding: 0% 2% 0% 2%;">
+              <p><font size=5px; color="black">Physics equations work equally well whether time is moving forward into the future (positive time) or backward into the past (negative time.) However, time in the natural world has one direction, called the arrow of time. The question of why time is irreversible is one of the biggest unresolved questions in science.
+                One explanation is that the natural world follows the laws of thermodynamics. The second law of thermodynamics states that within a closed system, the entropy of the system remains constant or increases. If the universe is considered to be a closed system, its entropy (degree of disorder) can never decrease. In other words, the universe cannot return to exactly the same state in which it was at an earlier point. Time cannot move backward.
+            </font>
+        </p>
+            </div>
+      </div>
+      </div>
+          <!-- </main> -->
+          
+        
+              
+              <!-- Optional JavaScript; choose one of the two! -->
+          
+              <!-- Option 1: Bootstrap Bundle with Popper -->
+          
+              <!-- Option 2: Separate Popper and Bootstrap JS -->
+              <!--
+              <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+              -->
+              <!-- <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>A Digital Analog Clock</title>
+                <link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+                <script src="project.js" async></script>-->
+
+
+  </body>
+  </head>
+  </html>

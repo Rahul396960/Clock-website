@@ -1,0 +1,580 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all">
+
+<script src="countries.js" async></script>
+<script src="project.js" async></script>
+
+
+<body class="bodycont">
+    <div class="nav-container">
+      <nav class="navbar" >
+         <div class="navleft"> 
+             <h1 class="navbar-logo" ><b>CLOCK</b></h1>
+          
+          <div class="menu-toggle" id="mobile-menu">
+            
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+             
+            </div>
+   
+            <div class="tabs">
+            <ul class="navbar-nav">
+                 <li >
+                <a class="tab-link active"  href="home.html">Home</a>
+              </li>
+              <li style="background-color:rgba(255, 38, 0, 0.719)">
+                  <a class="tab-link "  href="countries.html" >
+                    Countries
+                </a>
+            </li>
+            <li >
+              <a class="tab-link"  href="about.html">About</a>
+            </li>
+              </ul>
+            </div>
+        </div>
+
+              <!-- <div class="find">
+                <form>
+                  <input class="fore" type="search" placeholder="Search" >
+                  <button class="ser-btn" type="submit">Search</button>
+                </form>
+              </div> -->
+
+              </nav>
+        </div>
+   
+    <div class="container" >
+        <div class="Ucont">
+            <div class="UTC">
+                <h1 >Universal Time Coordinated (UTC)</h1>  
+            </div> 
+            <div class="Uinfo">
+            <div class="Utime">
+                <p ><font size=5px; color="black">UTC stands for Coordinated Universal Time, a standard used to set all time zones around the world.<br><br>Current UTC time is <b><span id="UTCtime" style= "  text-decoration: underline;"></span></b></font></p>
+            </div>
+            <div class="UTCclock">
+                <svg id="UTCanclock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                    <g id="face">
+                        <circle class="circle" cx="300" cy="300" r="253.9"/>
+                        <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                        <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                    </g>
+                    <g id="hours">
+                        <path class="hour-arm" d="M300.5 298V142"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                        </g>
+                    <g id="minutes">
+                        <path class="minute-arm" d="M300.5 298V67"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                    <g id="seconds">
+                        <path class="second-arm" d="M300.5 350V55"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="UTCright">
+                <p><font size=5px; color="black">Every countries has its different time 
+                        its get calculated on basis of utc time offset.Some countries timing is earlier then UTC timing and some of later than UTC timing  
+                    </font>
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="countries" >
+
+            <h1 style="margin-left: 2%;">Countries Timing:</h1>
+
+            <div class="Antime">
+                <h1 class="Countname">&nbsp;China</h1>
+                
+
+                <div class="times">         
+                    <p ><font size=5px; color="black">In China UTC time offset is UTC+8, It means china time is 8 hours later than UTC actual time.<br> <br>Current time in  <span id="time" style="text-decoration:underline;"></span></font>
+                    </p>
+                 </div>
+
+
+      <div class="clocks">
+        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+            <g id="face">
+                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+            </g>
+            <g id="hour1">
+                <path class="hour-arm" d="M300.5 298V142"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="minute1">
+                <path class="minute-arm" d="M300.5 298V67"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="second1">
+                <path class="second-arm" d="M300.5 350V55"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+        </svg>
+    </div>
+    
+        </div>
+
+
+        <div class="Antime">
+            <h1 class="Countname">&nbsp;Japan</h1>
+
+            <div class="times">
+                <p ><font size=5px; color="black">In China UTC time offset is UTC+9, It means china time is 9 hours later than UTC actual time.<br><br>Current time in  <span id="timer" style="text-decoration:underline;"></span></font>
+               </p>
+            </div>
+
+          <div class="clocks">
+          <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+              <g id="face">
+                  <circle class="circle" cx="300" cy="300" r="253.9"/>
+                  <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                  <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+              </g>
+              <g id="hour2">
+                  <path class="hour-arm" d="M300.5 298V142"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+              <g id="minute2">
+                  <path class="minute-arm" d="M300.5 298V67"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+              <g id="second2">
+                  <path class="second-arm" d="M300.5 350V55"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+          </svg>
+         
+      </div>
+
+          </div>
+
+
+          <div class="Antime">
+              <h1 class="Countname">&nbsp;Africa</h1>
+              <div class="times">
+                <p ><font size=5px; color="black">In China UTC time offset is UTC+2, It means china time is 2 hours later than UTC actual time.<br><br>Current time in <span id="times" style="text-decoration:underline;"></span></font>
+               </p>
+            </div>
+              
+        <div class="clocks">         
+         <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+              <g id="face">
+                  <circle class="circle" cx="300" cy="300" r="253.9"/>
+                  <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                  <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+              </g>
+              <g id="hour3">
+                  <path class="hour-arm" d="M300.5 298V142"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+              <g id="minute3">
+                  <path class="minute-arm" d="M300.5 298V67"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+              <g id="second3">
+                  <path class="second-arm" d="M300.5 350V55"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+          </svg>
+        </div>
+
+          </div>
+
+
+          <div class="Antime">
+              <h1 class="Countname">&nbsp;Indonesia</h1>
+              <div class="times">
+              <p ><font size=5px; color="black">In China UTC time offset is UTC+8, It means china time is 8 hours later than UTC actual time.<br><br>Current time in  <span id="tim" style="text-decoration:underline;"></span></font>
+             </p></div>
+         
+
+          <div class="clocks">
+          <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+              <g id="face">
+                  <circle class="circle" cx="300" cy="300" r="253.9"/>
+                  <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                  <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+              </g>
+              <g id="hour4">
+                  <path class="hour-arm" d="M300.5 298V142"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+              <g id="minute4">
+                  <path class="minute-arm" d="M300.5 298V67"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+              <g id="second4">
+                  <path class="second-arm" d="M300.5 350V55"/>
+                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+              </g>
+            </svg>
+        </div>
+    </div>
+
+          <div class="Antime">
+              <h1 class="Countname">&nbsp;Korea</h1>
+
+              <div class="times">
+              <p ><font size=5px; color="black">In China UTC time offset is UTC+9, It means china time is 9 hours later than UTC actual time.<br><br>Current time in  <span id="tim1" style="text-decoration:underline;"></span></font>
+             </p></div>
+           
+
+          <div class="clocks">
+            <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                <g id="face">
+                    <circle class="circle" cx="300" cy="300" r="253.9"/>
+                    <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                    <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                </g>
+                <g id="hour5">
+                    <path class="hour-arm" d="M300.5 298V142"/>
+                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                <g id="minute5">
+                    <path class="minute-arm" d="M300.5 298V67"/>
+                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                <g id="second5">
+                    <path class="second-arm" d="M300.5 350V55"/>
+                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+              </svg>
+            </div>
+        </div>
+
+            <div class="Antime">
+                <h1 class="Countname">&nbsp;Philippine</h1>
+                <div class="times">
+                <p ><font size=5px; color="black">In China UTC time offset is UTC+8, It means china time is 8 hours later than UTC actual time.<br><br>Current time in  <span id="tim2" style="text-decoration:underline;"></span></font>
+               </p></div>
+              
+
+            <div class="clocks">
+              <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                  <g id="face">
+                      <circle class="circle" cx="300" cy="300" r="253.9"/>
+                      <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                      <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                  </g>
+                  <g id="hour6">
+                      <path class="hour-arm" d="M300.5 298V142"/>
+                      <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                  </g>
+                  <g id="minute6">
+                      <path class="minute-arm" d="M300.5 298V67"/>
+                      <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                  </g>
+                  <g id="second6">
+                      <path class="second-arm" d="M300.5 350V55"/>
+                      <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                  </g>
+                </svg>
+            </div>
+        </div>
+
+             <div class="Antime">
+                 <h1 class="Countname">&nbsp;Australia</h1>
+
+                 <div class="times">
+                 <p ><font size=5px; color="black">In China UTC time offset is UTC+10.5, It means china time is 8 hours 30 minutes later than UTC actual time.<br><br>Current time in  <span id="tim3" style="text-decoration:underline;"></span></font>
+                </p></div>
+             
+
+              <div class="clocks">
+                <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                    <g id="face">
+                        <circle class="circle" cx="300" cy="300" r="253.9"/>
+                        <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                        <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                    </g>
+                    <g id="hour7">
+                        <path class="hour-arm" d="M300.5 298V142"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                    <g id="minute7">
+                        <path class="minute-arm" d="M300.5 298V67"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                    <g id="second7">
+                        <path class="second-arm" d="M300.5 350V55"/>
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                    </g>
+                  </svg>
+                </div>
+            </div>
+
+
+               <div class="Antime">
+                   <h1 class="Countname">&nbsp;Belgium</h1> 
+
+                   <div class="times">
+                    <p ><font size=5px; color="black">In China UTC time offset is UTC+2, It means china time is 2 hours later than UTC actual time.<br><br>Current time in  <span id="tim4" style="text-decoration:underline;"></span></font>
+                   </p></div>
+                 
+
+                <div class="clocks">
+                  <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                      <g id="face">
+                          <circle class="circle" cx="300" cy="300" r="253.9"/>
+                          <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                          <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                      </g>
+                      <g id="hour8">
+                          <path class="hour-arm" d="M300.5 298V142"/>
+                          <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                      </g>
+                      <g id="minute8">
+                          <path class="minute-arm" d="M300.5 298V67"/>
+                          <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                      </g>
+                      <g id="second8">
+                          <path class="second-arm" d="M300.5 350V55"/>
+                          <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                      </g>
+                    </svg>
+                </div>
+            </div>
+                   
+
+                  <div class="Antime">
+                      <h1 class="Countname">&nbsp;Colombia</h1>   
+                     
+                      <div class="times">
+                        <p ><font size=5px; color="black">In China UTC time offset is UTC-5, It means china time is 5 hours earlier than UTC actual time.<br><br>Current time in  <span id="tim5" style="text-decoration:underline;"></span></font>
+                       </p></div>
+
+                  <div class="clocks">
+                    <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                        <g id="face">
+                            <circle class="circle" cx="300" cy="300" r="253.9"/>
+                            <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                            <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                        </g>
+                        <g id="hour9">
+                            <path class="hour-arm" d="M300.5 298V142"/>
+                            <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                        </g>
+                        <g id="minute9">
+                            <path class="minute-arm" d="M300.5 298V67"/>
+                            <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                        </g>
+                        <g id="second9">
+                            <path class="second-arm" d="M300.5 350V55"/>
+                            <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                        </g>
+                      </svg>
+                    </div>
+
+                     
+                    </div>
+
+
+                    <div class="Antime">
+                        <h1 class="Countname">&nbsp;Germany</h1>     
+                          <div class="times">
+                            <p ><font size=5px; color="black">In China UTC time offset is UTC+1, It means china time is 1 hours later than UTC actual time.<br><br>Current time in  <span id="tim6" style="text-decoration:underline;"></span></font>
+                           </p></div>
+                    <div class="clocks">
+                      <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                          <g id="face">
+                              <circle class="circle" cx="300" cy="300" r="253.9"/>
+                              <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                              <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                          </g>
+                          <g id="hour10">
+                              <path class="hour-arm" d="M300.5 298V142"/>
+                              <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                          </g>
+                          <g id="minute10">
+                              <path class="minute-arm" d="M300.5 298V67"/>
+                              <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                          </g>
+                          <g id="second10">
+                              <path class="second-arm" d="M300.5 350V55"/>
+                              <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                          </g>
+                        </svg>
+                    </div>
+
+                     
+                      </div>
+
+                      <div class="Antime">
+                          <h1 class="Countname">&nbsp;Iceland</h1>       
+
+                          <div class="times">
+                            <p ><font size=5px; color="black">In China UTC time offset is UTC-1, It means china time is 1 hours earlier than UTC actual time.<br><br>Current time in  <span id="tim7" style="text-decoration:underline;"></span></font>
+                           </p></div>
+                      <div class="clocks">
+                        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                            <g id="face">
+                                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                            </g>
+                            <g id="hour11">
+                                <path class="hour-arm" d="M300.5 298V142"/>
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                            </g>
+                            <g id="minute11">
+                                <path class="minute-arm" d="M300.5 298V67"/>
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                            </g>
+                            <g id="second11">
+                                <path class="second-arm" d="M300.5 350V55"/>
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                            </g>
+                          </svg>
+                        </div>
+
+                        </div>
+
+                        <div class="Antime">
+                            <h1 class="Countname">&nbsp;Israel</h1>        
+                            <div class="times">
+                                <p ><font size=5px; color="black">In China UTC time offset is UTC+2, It means china time is 2 hours later than UTC actual time.<br><br>Current time in  <span id="tim8" style="text-decoration:underline;"></span></font>
+                               </p></div>
+                        <div class="clocks">
+                          <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                              <g id="face">
+                                  <circle class="circle" cx="300" cy="300" r="253.9"/>
+                                  <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                                  <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                              </g>
+                              <g id="hour12">
+                                  <path class="hour-arm" d="M300.5 298V142"/>
+                                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                              </g>
+                              <g id="minute12">
+                                  <path class="minute-arm" d="M300.5 298V67"/>
+                                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                              </g>
+                              <g id="second12">
+                                  <path class="second-arm" d="M300.5 350V55"/>
+                                  <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                              </g>
+                            </svg>
+                        </div>
+
+                            
+                          </div>
+
+                         <div class="Antime">
+                             <h1 class="Countname">&nbsp;Italy</h1>          
+                             <div class="times">
+                                <p ><font size=5px; color="black">In China UTC time offset is UTC+2, It means china time is 2 hours later than UTC actual time.<br><br>Current time in  <span id="tim9" style="text-decoration:underline;"></span></font>
+                               </p></div>
+                          <div class="clocks">
+                            <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                                <g id="face">
+                                    <circle class="circle" cx="300" cy="300" r="253.9"/>
+                                    <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                                    <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                                </g>
+                                <g id="hour13">
+                                    <path class="hour-arm" d="M300.5 298V142"/>
+                                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                </g>
+                                <g id="minute13">
+                                    <path class="minute-arm" d="M300.5 298V67"/>
+                                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                </g>
+                                <g id="second13">
+                                    <path class="second-arm" d="M300.5 350V55"/>
+                                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                </g>
+                              </svg>
+                            </div>
+
+                        
+                            </div>
+
+                            <div class="Antime">
+                                <h1 class="Countname">&nbsp;Malaysia</h1>              
+                                <div class="times">
+                                    <p ><font size=5px; color="black">In China UTC time offset is UTC+8, It means china time is 8 hours later than UTC actual time.<br><br>Current time in  <span id="tim10" style="text-decoration:underline;"></span></font>
+                                   </p></div>
+                            <div class="clocks">
+                              <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                                  <g id="face">
+                                      <circle class="circle" cx="300" cy="300" r="253.9"/>
+                                      <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                                      <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                                  </g>
+                                  <g id="hour14">
+                                      <path class="hour-arm" d="M300.5 298V142"/>
+                                      <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                  </g>
+                                  <g id="minute14">
+                                      <path class="minute-arm" d="M300.5 298V67"/>
+                                      <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                  </g>
+                                  <g id="second14">
+                                      <path class="second-arm" d="M300.5 350V55"/>
+                                      <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                  </g>
+                                </svg>
+                            </div>
+
+                                
+                              </div>
+
+
+                           <div class="Antime">
+                               <h1 class="Countname">&nbsp;Pakistan</h1>            
+                               <div class="times">
+                                <p ><font size=5px; color="black">In China UTC time offset is UTC+5, It means china time is 5 hours later than UTC actual time.<br><br>Current time in <span id="tim11" style="text-decoration:underline;"></span></font>
+                               </p></div>
+                              <div class="clocks">
+                                <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                                    <g id="face">
+                                        <circle class="circle" cx="300" cy="300" r="253.9"/>
+                                        <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                                        <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                                    </g>
+                                    <g id="hour15">
+                                        <path class="hour-arm" d="M300.5 298V142"/>
+                                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                    </g>
+                                    <g id="minute15">
+                                        <path class="minute-arm" d="M300.5 298V67"/>
+                                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                    </g>
+                                    <g id="second15">
+                                        <path class="second-arm" d="M300.5 350V55"/>
+                                        <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                                    </g>
+                                  </svg>
+                                </div>
+
+                                 
+                                </div>
+       
+          </div>
+
+      </div> 
+  
+</body>
+</head>
+</html>  
