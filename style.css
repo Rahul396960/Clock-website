@@ -696,7 +696,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-
+margin-left: 185%;
 }
 
 .menu-toggle .bar
