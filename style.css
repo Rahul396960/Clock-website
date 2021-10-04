@@ -642,15 +642,15 @@ flex-direction: column;
 align-items: center; 
  justify-content: center;*/
 position: absolute; 
-top: 53px;
-left: -100%;
+top: 52px;
+right: -100%;
 opacity:0;
 transition: all 0.3s ease ;
 }
 
 .navbar-nav.active
 {
-left:0;
+right:0;
 opacity:1;
 transition: all 0.3s ease ;
 }
