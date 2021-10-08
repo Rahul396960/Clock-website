@@ -496,8 +496,8 @@ height: auto;
     
     .container
 {
-     -webkit-text-fill-color: rgb(0, 0, 0);
-     text-shadow: 1.5px 0.5px rgb(255, 255, 255);
+     -webkit-text-fill-color: black;
+     
      font-weight: 400;
     /* align-self: center; */
     align-content: center;
