@@ -382,7 +382,7 @@ background-image: linear-gradient(to bottom right, rgba(229, 255, 0, 0.205), rgb
 
 .container
 {   
-     -webkit-text-fill-color: white;
+     -webkit-text-fill-color:black;
 text-shadow: 1.5px 0.5px black;
     justify-content: center;
     margin-top: 1%;
@@ -476,7 +476,7 @@ width:370px;
 
 .aboutsection
 {
-color: white;
+color: black;
 width: auto;
 height: auto;
 }
